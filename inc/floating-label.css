@@ -1,0 +1,128 @@
+/*************************************
+##									##
+##	created by Sidigdoyo Pribadi	##
+##									##
+##	sidigdoyo.pribadi@gmail.com 	##
+##									##
+*************************************/
+
+
+.floating-label {
+	position: relative;
+	margin: 20px 0;
+	width: auto;
+	height: auto;
+
+}
+.floating-label .label {
+	position: absolute;
+	bottom: 0;
+	top: 50%;
+	font-size: 1px;
+	visibility: hidden;
+	padding: 0 0 10px 10px;
+}
+.floating-label input {
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	font-size: 16px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+.floating-label .label,
+.floating-label input {
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.floating-label input:focus {
+	margin-top: 16px;
+}
+.floating-label input:focus ~ .label {
+	bottom: 90%;
+	top: 0;
+	font-size: 16px;
+	visibility: visible;
+	font-weight: 600;
+}
+
+.floating-label input:focus {
+	border-bottom: 1px solid rgba(81, 203, 238, 1);
+}
+
+.floating-label input::-webkit-input-placeholder {
+	font-size: 16px;
+	visibility: visible;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.floating-label input:-moz-placeholder { 
+	font-size: 16px;
+	visibility: visible;
+	-moz-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.floating-label input::-moz-placeholder { 
+	font-size: 16px;
+	visibility: visible;
+	-moz-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.floating-label input:-ms-input-placeholder {  
+	font-size: 16px;
+	visibility: visible;
+	-ms-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.floating-label input:-o-input-placeholder {  
+	font-size: 16px;
+	visibility: visible;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+
+.floating-label input:focus::-webkit-input-placeholder {
+	font-size: 0;
+	visibility: hidden;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:focus:-moz-placeholder { 
+	font-size: 0;
+	visibility: hidden;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:focus::-moz-placeholder {
+	font-size: 0;
+	visibility: hidden;
+	-moz-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:focus:-ms-input-placeholder {  
+	font-size: 0;
+	visibility: hidden;
+	-ms-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.floating-label input:focus:-o-input-placeholder {  
+	font-size: 0;
+	visibility: hidden;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
